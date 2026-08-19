@@ -5,7 +5,7 @@ services:
       DBT_HOST: host.docker.internal
       DBT_PORT: 5432
       DBT_USER: postgres
-      DBT_PASSWORD: postgres123
+      DBT_PASSWORD: ${DBT_PASSWORD}
       DBT_DBNAME: sales_warehouse
       DBT_SCHEMA: staging
     volumes:
