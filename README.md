@@ -116,20 +116,25 @@ erDiagram
 
 ---
 
-## Dashboard Gallery
+## 📊 Power BI Dashboard
 
-| Executive Overview | Monthly Sales Trend | Top 10 Products | Geography |
-|:------------------:|:-------------------:|:---------------:|:---------:|
-| ![Overview](screenshots/Sales_Data_Warehouse_Dashboard%201%20.png) | ![Trend](screenshots/Sales_Data_Warehouse_Dashboard%202.png) | ![Products](screenshots/Sales_Data_Warehouse_Dashboard%203%20.png) | ![Geo](screenshots/Sales_Data_Warehouse_Dashboard%204%20.png) |
+The executive dashboard provides a unified view of sales performance across all three data sources (Superstore, Online Retail, AdventureWorks). Built in Power BI Desktop with a 1920×1080 Executive theme, it enables cross-source analysis of revenue, quantity, orders, customer segments, product performance, and geographic distribution.
 
-**Features**:
-- 6 KPI cards (Sales, Qty, Orders, Avg Order, Customers, YoY%)
-- Monthly trend by source (line chart, years descending)
-- Top 10 products by sales (bar chart with conditional formatting)
-- Geographic map (bubble map by country/state)
-- Customer segment performance table
-- Year-over-year growth combo chart
-- 4 synchronized slicers (Year, Source, Segment, Category)
+### Executive Overview
+![Executive Overview](screenshots/Sales_Data_Warehouse_Dashboard%201%20.png)
+*The main landing page showing 6 KPI cards (Total Sales $37.9M, Quantity 5.7M, Orders 11K, Avg Order Value $3,420, Unique Customers 22.5K, YoY Growth), monthly sales trend by source (2010–2022), and synchronized slicers for Year, Source System, Segment, and Category.*
+
+### Sales Trends
+![Sales Trends](screenshots/Sales_Data_Warehouse_Dashboard%202.png)
+*Monthly sales trend line chart with years in descending order (2022→2010), separated by source system (Superstore, Online Retail, AdventureWorks). Includes year-over-year growth combo chart with column bars for sales amount and line for YoY% growth.*
+
+### Product Performance
+![Product Performance](screenshots/Sales_Data_Warehouse_Dashboard%203%20.png)
+*Top 10 products by sales amount (bar chart with conditional formatting gradient), customer segment performance table showing segment, source system, customer count, total sales, and average order value. Filterable by all synchronized slicers.*
+
+### Geographic Analysis
+![Geographic Analysis](screenshots/Sales_Data_Warehouse_Dashboard%204%20.png)
+*Bubble map visualization of sales by country/state/city with bubble size representing sales amount and color saturation by revenue. Enables drill-down from country → state → city level across all three data sources.*
 
 ---
 
