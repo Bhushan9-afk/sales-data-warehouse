@@ -19,7 +19,7 @@ This project demonstrates a complete modern data warehouse implementation from r
 | **Transform** | dbt Core 1.12 | 3 staging views, 5 dimensions, 1 incremental fact |
 | **Test** | dbt tests | 34 tests (schema, referential integrity, data quality) |
 | **Monitor** | Custom dq_summary | Row counts, null checks, duplicate detection |
-| **Visualize** | Power BI Desktop | Executive dashboard (1920×1080, Executive theme) |
+| **Visualize** | Power BI Desktop | Executive dashboard (1280×720, Executive theme) |
 | **Container** | Docker | dbt environment connecting to host PostgreSQL |
 
 ---
@@ -118,7 +118,7 @@ erDiagram
 
 ## 📊 Power BI Dashboard
 
-The executive dashboard provides a unified view of sales performance across all three data sources (Superstore, Online Retail, AdventureWorks). Built in Power BI Desktop with a 1920×1080 Executive theme, it enables cross-source analysis of revenue, quantity, orders, customer segments, product performance, and geographic distribution.
+The executive dashboard provides a unified view of sales performance across all three data sources (Superstore, Online Retail, AdventureWorks). Built in Power BI Desktop with a 1280×720 (16:9) Executive theme, it enables cross-source analysis of revenue, quantity, orders, customer segments, product performance, and geographic distribution.
 
 ### Executive Overview
 ![Executive Overview](screenshots/Sales_Data_Warehouse_Dashboard%201%20.png)
