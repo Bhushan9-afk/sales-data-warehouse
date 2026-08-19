@@ -1,0 +1,107 @@
+version: 2
+
+models:
+  - name: dim_date
+    columns:
+      - name: date_key
+        tests:
+          - unique
+          - not_null
+      - name: day
+        tests:
+          - not_null
+
+  - name: dim_source
+    columns:
+      - name: source_key
+        tests:
+          - unique
+          - not_null
+      - name: source_system
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['superstore', 'online_retail', 'adventureworks']
+
+  - name: dim_customer
+    columns:
+      - name: customer_key
+        tests:
+          - unique
+          - not_null
+      - name: source_customer_id
+        tests:
+          - not_null
+      - name: source_system
+        tests:
+          - not_null
+
+  - name: dim_product
+    columns:
+      - name: product_key
+        tests:
+          - unique
+          - not_null
+      - name: source_product_id
+        tests:
+          - not_null
+      - name: source_system
+        tests:
+          - not_null
+
+  - name: dim_geography
+    columns:
+      - name: geography_key
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_sales
+    columns:
+      - name: sales_key
+        tests:
+          - unique
+          - not_null
+      - name: date_key
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_date')
+                field: date_key
+      - name: customer_key
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_customer')
+                field: customer_key
+      - name: product_key
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_product')
+                field: product_key
+      - name: geography_key
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_geography')
+                field: geography_key
+      - name: source_key
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_source')
+                field: source_key
+      - name: quantity
+        tests:
+          - not_null
+      - name: sales_amount
+        tests:
+          - not_null
+          

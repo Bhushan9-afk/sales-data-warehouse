@@ -1,0 +1,13 @@
+cat > D:\sales_data_warehouse_project\.gitignore << 'EOF'
+.env
+__pycache__/
+*.pyc
+data/raw/*.csv
+data/processed/
+*.log
+powerbi/*.pbix
+dbt_project/sales_warehouse/target/
+dbt_project/sales_warehouse/logs/
+.DS_Store
+*.pbit
+EOF

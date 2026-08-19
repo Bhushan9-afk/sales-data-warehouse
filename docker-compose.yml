@@ -1,0 +1,17 @@
+services:
+  dbt:
+    build: .
+    environment:
+      DBT_HOST: host.docker.internal
+      DBT_PORT: 5432
+      DBT_USER: postgres
+      DBT_PASSWORD: postgres123
+      DBT_DBNAME: sales_warehouse
+      DBT_SCHEMA: staging
+    volumes:
+      - ./dbt_project:/app/dbt_project
+      - ./profiles.yml:/root/.dbt/profiles.yml
+    working_dir: /app/dbt_project/sales_warehouse
+    command: dbt debug
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
