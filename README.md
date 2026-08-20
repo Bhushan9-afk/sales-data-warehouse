@@ -122,11 +122,11 @@ The executive dashboard provides a unified view of sales performance across all 
 
 ### Executive Overview
 ![Executive Overview](screenshots/Sales_Data_Warehouse_Dashboard%201%20.png)
-*Dashboard with 4 KPI cards (Total Sales, Total Quantity, Total Orders, Average Order Value), 4 synchronized slicers (Year, Source System, Category, Segment), a YoY growth chart, and a line chart.*
+*Executive summary page featuring four KPI cards (Total Sales, Total Quantity, Total Orders, Average Order Value) with YoY growth indicators, four synchronized slicers (Year, Source System, Category, Segment) for cross-filtering, a year-over-year growth comparison chart, and a monthly sales trend line chart spanning 2010–2022 across all three source systems.*
 
 ### Sales Trends, Products & Geography
 ![Sales Trends Products Geography](screenshots/Sales_Data_Warehouse_Dashboard%202.png)
-*Product performance bar chart, geographic bubble map for sales by location, and a data table showing transaction-level details.*
+*Analytical detail page combining three visualizations: a top-10 product performance bar chart ranked by sales revenue, a geographic bubble map showing sales concentration by country/state with drill-down capability, and a transaction-level data table with sortable columns for granular analysis.*
 
 ### AdventureWorks — Bikes Category, Skilled Manual Segment
 ![AdventureWorks Bikes Skilled Manual](screenshots/Sales_Data_Warehouse_Dashboard%203%20.png)
