@@ -122,19 +122,19 @@ The executive dashboard provides a unified view of sales performance across all 
 
 ### Executive Overview
 ![Executive Overview](screenshots/Sales_Data_Warehouse_Dashboard%201%20.png)
-*The main landing page showing 6 KPI cards (Total Sales $37.9M, Quantity 5.7M, Orders 11K, Avg Order Value $3,420, Unique Customers 22.5K, YoY Growth), monthly sales trend by source (2010–2022), and synchronized slicers for Year, Source System, Segment, and Category.*
+*Main dashboard landing page showing 6 KPI cards (Total Sales $37.9M, Quantity 5.7M, Orders 11K, Avg Order Value $3,420, Unique Customers 22.5K, YoY Growth), monthly sales trend by source (2010–2022), and synchronized slicers for Year, Source System, Segment, and Category.*
 
 ### Sales Trends
 ![Sales Trends](screenshots/Sales_Data_Warehouse_Dashboard%202.png)
 *Monthly sales trend line chart with years in descending order (2022→2010), separated by source system (Superstore, Online Retail, AdventureWorks). Includes year-over-year growth combo chart with column bars for sales amount and line for YoY% growth.*
 
-### Product Performance
-![Product Performance](screenshots/Sales_Data_Warehouse_Dashboard%203%20.png)
-*Top 10 products by sales amount (bar chart with conditional formatting gradient), customer segment performance table showing segment, source system, customer count, total sales, and average order value. Filterable by all synchronized slicers.*
+### AdventureWorks — Bikes Category, Skilled Manual Segment
+![AdventureWorks Bikes Skilled Manual](screenshots/Sales_Data_Warehouse_Dashboard%203%20.png)
+*Dashboard filtered to AdventureWorks source system, Bikes category, and Skilled Manual segment. Shows KPI cards, monthly trend, top products, and geographic analysis specific to this filtered context.*
 
-### Geographic Analysis
-![Geographic Analysis](screenshots/Sales_Data_Warehouse_Dashboard%204%20.png)
-*Bubble map visualization of sales by country/state/city with bubble size representing sales amount and color saturation by revenue. Enables drill-down from country → state → city level across all three data sources.*
+### AdventureWorks — Bikes Category, Skilled Manual Segment (Detail View)
+![AdventureWorks Bikes Skilled Manual Detail](screenshots/Sales_Data_Warehouse_Dashboard%204%20.png)
+*Detail view of the AdventureWorks Bikes/Skilled Manual filter showing product performance table, geographic bubble map, and segment-specific metrics for this filtered combination.*
 
 ---
 
