@@ -215,7 +215,7 @@ The executive dashboard provides a unified view of sales performance across all 
 | **ELT over ETL** | Raw data landed first, transformations in dbt (SQL) |
 | **Surrogate keys** | `ROW_NUMBER()` on natural keys for all dimensions |
 | **Unknown customer handling** | Per-source "Unknown Customer" rows for 132K Online Retail nulls |
-| **Incremental fact** | `LEFT JOIN` anti-pattern on natural keys for fast refresh |
+| **Incremental fact** | `LEFT JOIN` against existing natural keys to identify new records |
 | **Schema separation** | `generate_schema_name` macro for true `staging`/`warehouse` schemas |
 | **Date parsing** | Explicit `to_date()` with `MM/DD/YYYY` for Superstore |
 
